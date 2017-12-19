@@ -124,11 +124,11 @@ function setGamePoints() {
 
 function isGameOver() {
     if (player.score == 10){
-        alert("Wygrałeś!");
+        alertify.alert("Wygrałeś!");
         gameState = 'ended';
     }
     else if (computer.score == 10){
-        alert("Przegrałeś :(");
+        alertify.alert("Przegrałeś :(");
         gameState = 'ended';
     }
     setGameElements();
